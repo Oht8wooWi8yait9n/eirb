@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NASA eIRB Portal Directory — LayoutInitial Container Router</title>
+  <link rel="canonical" href="https://eirb.jsc.nasa.gov/">
+  <meta name="description" content="NASA eIRB Portal Directory — LayoutInitial Container Router — NASA Electronic Institutional Review Board (eIRB) at Johnson Space Center.">
+  <style>
+    :root {
+      --nasa-blue: #0b3d91;
+      --nasa-dark: #061f4a;
+      --nasa-red: #fc3d21;
+      --bg-light: #f5f7fa;
+      --card-bg: #ffffff;
+      --text-main: #1b1b1b;
+      --text-muted: #4b5563;
+      --border-color: #d1d5db;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-main);
+      background: var(--bg-light);
+    }
+    header.site-header {
+      background: linear-gradient(135deg, var(--nasa-dark), var(--nasa-blue));
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+      border-bottom: 4px solid var(--nasa-red);
+    }
+    header.site-header .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header.site-header .eyebrow {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.9;
+      margin-bottom: 0.25rem;
+    }
+    header.site-header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    nav.site-nav {
+      background: #fff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.5rem 1.5rem;
+    }
+    nav.site-nav .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.75rem;
+    }
+    nav.site-nav a {
+      color: var(--nasa-blue);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+    nav.site-nav a:hover, nav.site-nav a.active {
+      background: var(--nasa-blue);
+      color: #fff;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 1.5rem auto;
+      padding: 0 1.5rem;
+    }
+    .source-banner {
+      background: #eef2ff;
+      border-left: 4px solid var(--nasa-blue);
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.25rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.9rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .table-wrap {
+      overflow-x: auto;
+    }
+    table.eirb-table, .container table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0;
+    }
+    table.eirb-table th, table.eirb-table td {
+      border: 1px solid var(--border-color);
+      padding: 0.55rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+      font-size: 0.92rem;
+    }
+    table.eirb-table th {
+      background: #f1f5f9;
+      font-weight: 600;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      font-size: 0.88em;
+    }
+    footer.site-footer {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="eyebrow">National Aeronautics and Space Administration &bull; Office of Research Assurance (ORA) &bull; Portal Directory</div>
+      <h1>NASA eIRB Portal Directory — LayoutInitial Container Router</h1>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="eIRB Portal Navigation">
+    <div class="nav-inner">
+      <a href="https://oht8woowi8yait9n.github.io/eirb/" class="active">Home</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/library">Library</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/nasa-irb">NASA IRB</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/irb-submission-roadmap">IRB Submission Roadmap</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/types-of-submissions">Types of Submissions</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/eirb-states">eIRB States</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/cooperative-research">Cooperative Research</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/exempt-5-activities">Exempt #5 Activities</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/medical-monitoring-level">Medical Monitoring Level</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/additional-information">Additional Information</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/hrmrb">HRMRB</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/ahrcb">AHRCB</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/contact-us">Contact Us</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/report-a-concern">Report a Concern</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/calendar-of-events">Calendar of Events</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/related-links">Related Links</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/registration">Registration</a>
+      <a href="https://oht8woowi8yait9n.github.io/eirb/login">Login</a>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="source-banner">
+      <strong>Official NASA eIRB Portal Resource:</strong>
+      <a href="https://eirb.jsc.nasa.gov/" target="_blank" rel="noopener">https://eirb.jsc.nasa.gov/</a>
+      &bull; <strong>Mirror URL:</strong> <a href="https://oht8woowi8yait9n.github.io/eirb/">https://oht8woowi8yait9n.github.io/eirb/</a>
+      &bull; <strong>Contact:</strong> <a href="mailto:NASA-IRB@nasa.gov">NASA-IRB@nasa.gov</a> | <a href="mailto:hq-hrmrb@mail.nasa.gov">hq-hrmrb@mail.nasa.gov</a>
+      
+    </div>
+    <main id="main-content" class="card">
+<h2>NASA eIRB Portal Pages</h2><ul><li><a href="https://oht8woowi8yait9n.github.io/eirb/">Home — NASA Electronic Institutional Review Board (eIRB)</a> (<code>4E9439392D8EF04BB83423B71F93D313</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/library">Library — Consent &amp; Protocol Templates, COI Forms, Help Guides &amp; SOPs | NASA eIRB</a> (<code>3274673DA99811EEAD81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/nasa-irb">NASA IRB Overview, Regulations &amp; Submission Guidance | NASA eIRB</a> (<code>9AD98B7EE42E28489071D16CE385ACB1</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/irb-submission-roadmap">IRB Submission Roadmap — 10-Step Protocol Review Process | NASA eIRB</a> (<code>7729244CCC2411EEAE81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/types-of-submissions">Types of Submissions — Initial, Modification, Continuing Review, RNI &amp; Closure | NASA eIRB</a> (<code>30F1298FA0F411EEAD81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/eirb-states">eIRB States — Follow Your eIRB Submission Workflow | NASA eIRB</a> (<code>B6E6C13CA11D11EEAD81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/cooperative-research">Cooperative Research &amp; Single IRB Reliance (14 CFR 1230.114 / FWA00019876) | NASA eIRB</a> (<code>52599855CC1011EEAE81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/exempt-5-activities">Exempt #5 Activities — Public Service or Benefit Programs | NASA eIRB</a> (<code>A4E8064D4744874F8A2BDD417F6B8807</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/medical-monitoring-level">Medical Monitoring Level (MML) Guidelines — JSC &amp; Spaceflight | NASA eIRB</a> (<code>5579A4F3DA7411EEB081FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/additional-information">Additional Information — CITI Training, COI, Risk Level, Merit &amp; Safety Review, Blood Volume &amp; Screening | NASA eIRB</a> (<code>401D08D3A98E11EEAD81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/hrmrb">HRMRB — Human Research Multilateral Review Board (ISS International Partners) | NASA eIRB</a> (<code>7C95F4A0A99611EEAD81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/ahrcb">AHRCB — Artemis Human Research Coordination Board | NASA eIRB</a> (<code>8BEB7DB54C8411F0E581FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/contact-us">Contact Us — NASA IRB &amp; HRMRB Support | NASA eIRB</a> (<code>A7F2212BCC1C11EEAE81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/report-a-concern">Report a Concern — Research Participant Protection &amp; Office of Research Assurance | NASA eIRB</a> (<code>CCCE787EA9C111EEAD81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/calendar-of-events">Calendar of Events — NASA IRB &amp; HRMRB/AHRCB Meeting Schedules &amp; Submission Deadlines | NASA eIRB</a> (<code>3491E9BBA9BC11EEAD81FF18B24EF50A</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/related-links">Related Links — NASA Specific, General Regulatory &amp; Historical Links | NASA eIRB</a> (<code>63B0D080C0B8994880C9DD20982017B3</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/registration">Self Registration — Request a New NASA eIRB User Account | NASA eIRB</a> (<code>2660DD9607A4FB4ABEBF7928381E5945</code>)</li><li><a href="https://oht8woowi8yait9n.github.io/eirb/login">Login &amp; Privacy Act of 1974 Notice | NASA eIRB</a> (<code>0A7646F3B149874E902185897C144551</code>)</li></ul><script>(function(){var m={"4E9439392D8EF04BB83423B71F93D313": "https://oht8woowi8yait9n.github.io/eirb/", "3274673DA99811EEAD81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/library", "9AD98B7EE42E28489071D16CE385ACB1": "https://oht8woowi8yait9n.github.io/eirb/nasa-irb", "7729244CCC2411EEAE81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/irb-submission-roadmap", "30F1298FA0F411EEAD81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/types-of-submissions", "B6E6C13CA11D11EEAD81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/eirb-states", "52599855CC1011EEAE81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/cooperative-research", "A4E8064D4744874F8A2BDD417F6B8807": "https://oht8woowi8yait9n.github.io/eirb/exempt-5-activities", "5579A4F3DA7411EEB081FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/medical-monitoring-level", "401D08D3A98E11EEAD81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/additional-information", "7C95F4A0A99611EEAD81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/hrmrb", "8BEB7DB54C8411F0E581FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/ahrcb", "A7F2212BCC1C11EEAE81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/contact-us", "CCCE787EA9C111EEAD81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/report-a-concern", "3491E9BBA9BC11EEAD81FF18B24EF50A": "https://oht8woowi8yait9n.github.io/eirb/calendar-of-events", "63B0D080C0B8994880C9DD20982017B3": "https://oht8woowi8yait9n.github.io/eirb/related-links", "2660DD9607A4FB4ABEBF7928381E5945": "https://oht8woowi8yait9n.github.io/eirb/registration", "0A7646F3B149874E902185897C144551": "https://oht8woowi8yait9n.github.io/eirb/login"};var q=window.location.search||'';var match=q.match(/OID(?:\[|%5B)([0-9A-F]{32})(?:\]|%5D)/i);if(match&&m[match[1].toUpperCase()]){window.location.replace(m[match[1].toUpperCase()]);}})();</script>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <p>NASA Electronic Institutional Review Board (eIRB) &bull; Johnson Space Center (JSC) / Office of the Chief Health and Medical Officer (OCHMO) &bull; Federalwide Assurance FWA00019876 &bull; 14 CFR Part 1230 &bull; NPD 7100.8 &bull; NPR 7100.1</p>
+  </footer>
+</body>
+</html>
