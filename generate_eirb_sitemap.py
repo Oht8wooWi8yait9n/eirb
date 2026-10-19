@@ -456,24 +456,11 @@ def extract_docx_html(docx_bytes: bytes) -> tuple[str, str]:
 
 def extract_pdf_html(pdf_path: str) -> tuple[str, str]:
     """
-    Extract text from a PDF file using either `pypdf` (if installed) or `/usr/bin/pdftotext`
-    and format into clean HTML paragraphs.
+    Extract text from a PDF file using `/usr/bin/pdftotext -layout` (preferred for deterministic
+    layout preservation) or `pypdf` as fallback, and format into clean HTML paragraphs.
     """
     text = ""
-    try:
-        import pypdf  # type: ignore
-
-        reader = pypdf.PdfReader(pdf_path)
-        pages_text = []
-        for idx, page in enumerate(reader.pages, 1):
-            pt = (page.extract_text() or "").strip()
-            if pt:
-                pages_text.append(f"--- Page {idx} ---\n{pt}")
-        text = "\n\n".join(pages_text)
-    except Exception:
-        pass
-
-    if not text.strip() and shutil.which("pdftotext"):
+    if shutil.which("pdftotext"):
         try:
             res = subprocess.run(
                 ["pdftotext", "-layout", pdf_path, "-"],
@@ -487,12 +474,27 @@ def extract_pdf_html(pdf_path: str) -> tuple[str, str]:
         except Exception:
             pass
 
+    if not text.strip():
+        try:
+            import pypdf  # type: ignore
+
+            reader = pypdf.PdfReader(pdf_path)
+            pages_text = []
+            for idx, page in enumerate(reader.pages, 1):
+                pt = (page.extract_text() or "").strip()
+                if pt:
+                    pages_text.append(pt)
+            text = "\n\n".join(pages_text)
+        except Exception:
+            pass
+
     text = text.replace("\x0c", "\n\n--- Page Break ---\n\n").strip()
     if not text:
         return "<p><em>No extractable text layer found in PDF. Use the download link above to view the original PDF document.</em></p>", ""
 
     paragraphs = []
     for block in re.split(r"\n\s*\n", text):
+        block = re.sub(r"^---\s*Page\s+\d+\s*---\s*", "", block.strip())
         cleaned = "\n".join(line.rstrip() for line in block.splitlines() if line.strip()).strip()
         if not cleaned:
             continue
@@ -825,6 +827,17 @@ def clean_portal_main_html(
         "",
         body,
         flags=re.S | re.I,
+    )
+    body = re.sub(
+        r'(name=["\']_webrLocale["\']\s+value=["\'])en-us(["\'])',
+        r"\1en-US\2",
+        body,
+        flags=re.I,
+    )
+    body = re.sub(
+        r'(action=["\'][^"\']*?)Entity\[OID\[([^\]]+)\]\]',
+        r"\1Entity%5BOID%5B\2%5D%5D",
+        body,
     )
 
     # Append pre-rendered dynamic components for Library, Related Links, Roadmap, and eIRB States
