@@ -294,12 +294,12 @@ def write_if_changed(path: str, content: str) -> bool:
         os.makedirs(parent, exist_ok=True)
     if os.path.exists(path):
         try:
-            with open(path, "r", encoding="utf-8") as f:
+            with open(path, "r", encoding="utf-8", newline="") as f:
                 if f.read() == content:
                     return False
         except Exception:
             pass
-    with open(path, "w", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8", newline="") as f:
         f.write(content)
     return True
 
@@ -838,6 +838,18 @@ def clean_portal_main_html(
         r'(action=["\'][^"\']*?)Entity\[OID\[([^\]]+)\]\]',
         r"\1Entity%5BOID%5B\2%5D%5D",
         body,
+    )
+    body = re.sub(
+        r'(name=["\']_webrChangeTrackingTransID["\']\s+value=["\'])[^"\']*(["\'])',
+        r"\1\2",
+        body,
+        flags=re.I,
+    )
+    body = re.sub(
+        r'("eTypePOREF"\s*:\s*"com\.webridge\.account\.Person\[OID\[)[0-9A-F]+(\]\]")',
+        r"\1STATIC\2",
+        body,
+        flags=re.I,
     )
 
     # Append pre-rendered dynamic components for Library, Related Links, Roadmap, and eIRB States
