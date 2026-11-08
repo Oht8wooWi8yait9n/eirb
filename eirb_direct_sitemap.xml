@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://eirb.jsc.nasa.gov/EIRB/sd/Rooms/DisplayPages/LayoutInitial?Container=com.webridge.entity.Entity%5BOID%5B4E9439392D8EF04BB83423B71F93D313%5D%5D</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://eirb.jsc.nasa.gov/EIRB/sd/Rooms/DisplayPages/LayoutInitial?Container=com.webridge.entity.Entity%5BOID%5B3274673DA99811EEAD81FF18B24EF50A%5D%5D</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -86,7 +86,7 @@
   </url>
   <url>
     <loc>https://eirb.jsc.nasa.gov/EIRB/sd/Rooms/DisplayPages/LayoutInitial?Container=com.webridge.entity.Entity%5BOID%5B3491E9BBA9BC11EEAD81FF18B24EF50A%5D%5D</loc>
-    <lastmod>2026-10-25</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://eirb.jsc.nasa.gov/EIRB/sd/resource/doc/DOC8DC0BB5A227FD8E/ICF-NASA-template-2026Apr.docx</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>

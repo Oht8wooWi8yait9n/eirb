@@ -55,9 +55,9 @@
       "title": "HRMRB Informed Consent (DOC8DC0BB5A227FD80) \u2014 Informed Consent Templates | NASA eIRB Library"
     },
     {
-      "content_hash": "1c3c03b2dc79fd20",
+      "content_hash": "fac5040511c36541",
       "direct_url": "https://eirb.jsc.nasa.gov/EIRB/sd/resource/doc/DOC8DC0BB5A227FD8E/ICF-NASA-template-2026Apr.docx",
-      "doc_lastmod": "2026-04-07",
+      "doc_lastmod": "2026-11-06",
       "mirror_url": "https://oht8woowi8yait9n.github.io/eirb/docs/DOC8DC0BB5A227FD8E",
       "priority": "0.80",
       "route": "/docs/DOC8DC0BB5A227FD8E",
@@ -545,7 +545,7 @@
     "DOC8DC0BB5A227FD8E": {
       "author": "Jen Ensley Gorshe",
       "dateCreated": "2024-01-02 13:27:31",
-      "dateModified": "2026-04-07 17:09:38",
+      "dateModified": "2026-11-06 16:36:48",
       "description": "Use for general NASA studies",
       "directUrl": "https://eirb.jsc.nasa.gov/EIRB/sd/resource/doc/DOC8DC0BB5A227FD8E/ICF-NASA-template-2026Apr.docx",
       "docPageMirrorUrl": "https://oht8woowi8yait9n.github.io/eirb/docs/DOC8DC0BB5A227FD8E",
@@ -558,7 +558,7 @@
       "name": "NASA Informed Consent",
       "relFilePath": "EIRB/sd/resource/doc/DOC8DC0BB5A227FD8E/ICF-NASA-template-2026Apr.docx",
       "section": "Informed Consent Templates",
-      "version": "0.11"
+      "version": "0.12"
     },
     "DOC8DC0BB5A227FD92": {
       "author": "Arturo Garza",
@@ -1508,16 +1508,16 @@
   ],
   "ghPagesBase": "https://oht8woowi8yait9n.github.io/eirb",
   "pageHashes": {
-    "/": "5bf69890cc7116b2",
+    "/": "16377e940c25eab4",
     "/additional-information": "5a0fe884e3e575ee",
     "/ahrcb": "50a6bc458c31bf0f",
-    "/calendar-of-events": "848563d7642971f4",
+    "/calendar-of-events": "e7a03e5405b1e7fe",
     "/contact-us": "4f100758eefbb30f",
     "/cooperative-research": "ef1726a7e7eb2a3b",
     "/docs/DOC8DC0BB5A227FD78": "b5e183a12f0b259a",
     "/docs/DOC8DC0BB5A227FD80": "d6a549f83729497f",
     "/docs/DOC8DC0BB5A227FD82": "797fab87a817382c",
-    "/docs/DOC8DC0BB5A227FD8E": "1c3c03b2dc79fd20",
+    "/docs/DOC8DC0BB5A227FD8E": "fac5040511c36541",
     "/docs/DOC8DC0BB5A227FD92": "8cd14e74efe849cf",
     "/docs/DOC8DC0BB5A227FD95": "449f6f37f86778cb",
     "/docs/DOC8DC0BB5A227FD9D": "9fa2f4a7f8cf1df1",
@@ -1572,7 +1572,7 @@
     "/exempt-5-activities": "cdbe9071473a5647",
     "/hrmrb": "844c8485d778464e",
     "/irb-submission-roadmap": "14c4a3274f1c562a",
-    "/library": "4157d1c27e49a235",
+    "/library": "a483e42bc396e7ed",
     "/login": "40d67ef838e2c005",
     "/medical-monitoring-level": "733dd551029522cc",
     "/nasa-irb": "40ff96614d953f2c",
@@ -1583,7 +1583,7 @@
   },
   "portalPages": [
     {
-      "content_hash": "5bf69890cc7116b2",
+      "content_hash": "16377e940c25eab4",
       "direct_url": "https://eirb.jsc.nasa.gov/EIRB/sd/Rooms/DisplayPages/LayoutInitial?Container=com.webridge.entity.Entity%5BOID%5B4E9439392D8EF04BB83423B71F93D313%5D%5D",
       "mirror_url": "https://oht8woowi8yait9n.github.io/eirb/",
       "oid": "4E9439392D8EF04BB83423B71F93D313",
@@ -1592,7 +1592,7 @@
       "title": "Home \u2014 NASA Electronic Institutional Review Board (eIRB)"
     },
     {
-      "content_hash": "4157d1c27e49a235",
+      "content_hash": "a483e42bc396e7ed",
       "direct_url": "https://eirb.jsc.nasa.gov/EIRB/sd/Rooms/DisplayPages/LayoutInitial?Container=com.webridge.entity.Entity%5BOID%5B3274673DA99811EEAD81FF18B24EF50A%5D%5D",
       "mirror_url": "https://oht8woowi8yait9n.github.io/eirb/library",
       "oid": "3274673DA99811EEAD81FF18B24EF50A",
@@ -1709,7 +1709,7 @@
       "title": "Report a Concern \u2014 Research Participant Protection & Office of Research Assurance | NASA eIRB"
     },
     {
-      "content_hash": "848563d7642971f4",
+      "content_hash": "e7a03e5405b1e7fe",
       "direct_url": "https://eirb.jsc.nasa.gov/EIRB/sd/Rooms/DisplayPages/LayoutInitial?Container=com.webridge.entity.Entity%5BOID%5B3491E9BBA9BC11EEAD81FF18B24EF50A%5D%5D",
       "mirror_url": "https://oht8woowi8yait9n.github.io/eirb/calendar-of-events",
       "oid": "3491E9BBA9BC11EEAD81FF18B24EF50A",
